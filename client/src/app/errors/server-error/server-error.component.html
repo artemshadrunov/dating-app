@@ -1,0 +1,12 @@
+<h4>Internal server errror - refreshing the page will make the error go away</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: If you are seeing this  then Angulare is probably not to blame</p>
+    <p>What to do next?</p>
+    <ol>
+        <li>Open the chrome dev tools</li>
+        <li>Inspect the network tab</li>
+        <li>Check the failing request</li>
+    </ol>
+    <code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
+</ng-container>
