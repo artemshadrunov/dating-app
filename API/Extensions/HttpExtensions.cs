@@ -6,7 +6,7 @@ namespace API.Extensions
 {
     public static class HttpExtensions
     {
-        public static void AddpaginationHeader(this HttpResponse response, int currenPage, int itemsPerPage, int totalItems, int totalPages)
+        public static void AddPaginationHeader(this HttpResponse response, int currenPage, int itemsPerPage, int totalItems, int totalPages)
         {
             var paginationHeader = new PaginationHeader(currenPage, itemsPerPage, totalItems, totalPages);
 
